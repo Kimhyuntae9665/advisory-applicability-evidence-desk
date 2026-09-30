@@ -1,0 +1,90 @@
+{
+  "repository": "https://github.com/Kimhyuntae9665/advisory-applicability-evidence-desk",
+  "published_commit": "5e4335138d007f7c51f5013da56c1034ad124391",
+  "checked_url": "https://github.com/Kimhyuntae9665/advisory-applicability-evidence-desk/tree/5e4335138d007f7c51f5013da56c1034ad124391",
+  "browser": "actual installed Google Chrome via Playwright",
+  "model_calls": 0,
+  "checks": [
+    {
+      "viewport": 360,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 294
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 293.984375
+        },
+        {
+          "kind": "modelScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2628,
+          "displayWidth": 293.984375
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 324
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 323.984375
+        },
+        {
+          "kind": "modelScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2628,
+          "displayWidth": 323.984375
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 390
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 837.984375
+        },
+        {
+          "kind": "modelScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2628,
+          "displayWidth": 837.984375
+        }
+      ]
+    }
+  ]
+}
