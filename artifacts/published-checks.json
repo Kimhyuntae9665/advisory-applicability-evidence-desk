@@ -1,0 +1,69 @@
+{
+  "repository": "https://github.com/Kimhyuntae9665/advisory-applicability-evidence-desk",
+  "published_commit": "ebeaaabc75975e37fe747dceb736814592851132",
+  "checked_url": "https://github.com/Kimhyuntae9665/advisory-applicability-evidence-desk/tree/ebeaaabc75975e37fe747dceb736814592851132",
+  "browser": "actual installed Google Chrome via Playwright",
+  "model_calls": 0,
+  "checks": [
+    {
+      "viewport": 360,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 294
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 293.984375
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 324
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 323.984375
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 965,
+          "displayWidth": 390
+        },
+        {
+          "kind": "cpuScreenshot",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2966,
+          "displayWidth": 837.984375
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "capture": "actual installed Chrome via Playwright, paced browser demonstration",
+  "fictional_inventory": true,
+  "browser_automation": true,
+  "model_calls": 0,
+  "human_security_adjudication": false,
+  "review_clicks": "automated synthetic inspection only; not authenticated approval",
+  "cases": [
+    "D1",
+    "D2",
+    "E4",
+    "E5",
+    "E6",
+    "E2"
+  ],
+  "source_files_modified": false,
+  "local_snapshot_simulation": true
+}
