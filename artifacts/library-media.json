@@ -1,0 +1,47 @@
+{
+  "identity_metadata": "Confirmed Library write identities; xattrs persisted and verified on owned Linux media files. Windows Python lacks os.setxattr.",
+  "media": [
+    {
+      "path": "docs/architecture.png",
+      "library_file_id": "libfile_44cfb042a6b88191bb83bac45e6e408d",
+      "version": 0,
+      "sha256": "5de71db28226adff0bc307a56b139c21b4ab4eb3a07988964c1f13a1e5a67671",
+      "bytes": 43264
+    },
+    {
+      "path": "docs/architecture.svg",
+      "library_file_id": "libfile_0e98a9e8a8548191be3d3f2aaa95dc34",
+      "version": 0,
+      "sha256": "d64aef6402afb6f0ffb3031b4011d8ecbc2ea69a0a5a6175fe3a266a81b058fe",
+      "bytes": 2401
+    },
+    {
+      "path": "artifacts/media/02-current-historical.png",
+      "library_file_id": "libfile_adae385027d481918dfd750217710aa1",
+      "version": 0,
+      "sha256": "e4ccb253c26127b3e10ebe403a7518e638dd4b0abc463e09516c8bc0f355c835",
+      "bytes": 508940
+    },
+    {
+      "path": "artifacts/media/evidence-review.mp4",
+      "library_file_id": "libfile_cd2d04ab2450819198552ef7f0a954b3",
+      "version": 1,
+      "sha256": "1eb4dd7d711f2d481f189b847e4ac4ecbbff8e7f0f03952fce8b40889ac821a6",
+      "bytes": 2545099
+    },
+    {
+      "path": "artifacts/media/model-E4-proposed.png",
+      "library_file_id": "libfile_3ac8be4799ac8191abfb41a21f9e15bc",
+      "version": 0,
+      "sha256": "d7c903bdc3b38085cd8570ca1b45af0d0682a017d359e5123e723989ff0a27a8",
+      "bytes": 456986
+    },
+    {
+      "path": "artifacts/media/recorded-explanation-review.mp4",
+      "library_file_id": "libfile_8ae7522aab808191b3c5f3e35497ce05",
+      "version": 0,
+      "sha256": "238a1c27b5b56bee80a13d5d890136a3de8bc90e2a9e4ca9576e94abbfbc3f26",
+      "bytes": 2065741
+    }
+  ]
+}

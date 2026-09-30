@@ -1,0 +1,42 @@
+{
+  "browser": "actual Chrome via Playwright",
+  "media": "stored six-case Qwen outputs; no live inference in capture",
+  "model_calls_in_capture": 0,
+  "human_accepted_model_notes": 0,
+  "browser_automation": true,
+  "cases": [
+    {
+      "case_id": "E4",
+      "status": "PROPOSED_EXPLANATION",
+      "citation_bound": true,
+      "semantic_checkbox": false,
+      "model_receipt": null,
+      "source_state": "EXACT_INSTALLED_MATCH_RUNNING_UNRESOLVED"
+    },
+    {
+      "case_id": "E5",
+      "status": "PROPOSED_EXPLANATION",
+      "citation_bound": true,
+      "semantic_checkbox": false,
+      "model_receipt": null,
+      "source_state": "CONFLICTING_INVENTORY_IDENTITY"
+    },
+    {
+      "case_id": "E6",
+      "status": "PROPOSED_EXPLANATION",
+      "citation_bound": true,
+      "semantic_checkbox": false,
+      "model_receipt": null,
+      "source_state": "CONFLICTING_SOURCES"
+    }
+  ],
+  "changed_source": {
+    "status": "ARCHIVE_REJECTED",
+    "current_citation_links": 0,
+    "original_model_fingerprint_preserved": true,
+    "confirmation_disabled": true,
+    "raw_original_keyboard_focusable": true
+  },
+  "mobile_width": 390,
+  "document_width": 390
+}

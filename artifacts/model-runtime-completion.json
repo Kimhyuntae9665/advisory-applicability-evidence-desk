@@ -1,0 +1,19 @@
+{
+  "evaluation_requests": 6,
+  "provider_done_acknowledgements": 6,
+  "done_reasons": [
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop"
+  ],
+  "active_model_clients": 0,
+  "shared_lock_probe": "exclusive acquired/released",
+  "timeout_marker_present": false,
+  "safe_lease_release": true,
+  "development_calls": 0,
+  "retries": 0,
+  "additional_demo_calls": 0
+}

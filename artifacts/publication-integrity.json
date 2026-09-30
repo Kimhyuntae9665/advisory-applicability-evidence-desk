@@ -1,0 +1,20 @@
+{
+  "frozen_v2_file_hashes_match": 12,
+  "original_input_digest_unchanged": true,
+  "freeze_commit_ancestry_verified": [
+    [
+      "7dfe946f800b3d80cd790dac956587bfc87d34ed",
+      "HEAD"
+    ],
+    [
+      "e8f74a461b9145f750eda13f584da9b96d4c29b1",
+      "943320ec0f089a0e1935c88efe00da3941fcca26"
+    ],
+    [
+      "943320ec0f089a0e1935c88efe00da3941fcca26",
+      "HEAD"
+    ]
+  ],
+  "library_media_hashes_and_linux_identity_metadata_match": 6,
+  "model_calls_in_check": 0
+}

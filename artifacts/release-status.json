@@ -1,1 +1,23 @@
-{"stage":"CPU implementation, tests, browser media and frozen protocol ready; model evaluation not run","developmentModelCalls":0,"evaluationModelCalls":0,"additionalDemoModelCalls":0,"reservedEvaluationCases":6,"nodeTestsPassed":38,"linuxCpuTransportMocksPassed":6,"cpuBaselineCases":9,"cpuBaselineStateMatches":9,"cpuBaselineVendorMatches":9,"originalBundleCommit":"7dfe946f800b3d80cd790dac956587bfc87d34ed","erratum":"ADVISORY-v1-E4-banner-wording-1","gpuLease":"P06 owns lease; no P08 inference authorized","formalOpenVexSchemaValidation":false,"independentHumanSecurityAdjudication":false}
+{
+  "stage": "Six-case evaluation complete; CPU and stored-output browser evidence published",
+  "developmentModelCalls": 0,
+  "evaluationModelCalls": 6,
+  "additionalDemoModelCalls": 0,
+  "reservedEvaluationCases": 6,
+  "nodeTestsPassed": 39,
+  "linuxCpuTransportMocksPassed": 6,
+  "cpuBaselineCases": 9,
+  "cpuBaselineStateMatches": 9,
+  "cpuBaselineVendorMatches": 9,
+  "originalBundleCommit": "7dfe946f800b3d80cd790dac956587bfc87d34ed",
+  "erratum": "ADVISORY-v1-E4-banner-wording-1",
+  "gpuLease": "P08 safely released after six done/stop acknowledgements; no further inference",
+  "formalOpenVexSchemaValidation": false,
+  "independentHumanSecurityAdjudication": false,
+  "exactFactTextsCopied": 22,
+  "verifiedFactTextsSupplied": 22,
+  "independentHumanSemanticAdjudication": false,
+  "modelNotesHumanAccepted": 0,
+  "sourceSnapshotVersion": 2,
+  "sourceSnapshotCommit": "943320ec0f089a0e1935c88efe00da3941fcca26"
+}

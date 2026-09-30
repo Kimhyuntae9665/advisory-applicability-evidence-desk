@@ -1,0 +1,22 @@
+{
+  "kind": "provider/client observations, separate from applicability and explanation quality",
+  "evaluation_calls": 6,
+  "development_calls": 0,
+  "retries": 0,
+  "demo_calls": 0,
+  "prompt_tokens_total": 15127,
+  "output_tokens_total": 2535,
+  "maximum_prompt_tokens": 2896,
+  "maximum_output_tokens": 473,
+  "client_elapsed_ms_min": 6682.68,
+  "client_elapsed_ms_max": 8468.89,
+  "client_elapsed_ms_sum": 45850.1,
+  "exact_cpu_fact_texts_copied": 22,
+  "verified_fact_texts": 22,
+  "rule_flagged_unsupported_claims": 0,
+  "independent_human_semantic_adjudication": false,
+  "model_tag": "qwen3:4b",
+  "runtime_version_observed_after_batch": "ollama version is 0.17.7",
+  "installed_model_metadata_observed_after_batch": "Model\n    architecture        qwen3     \n    parameters          4.0B      \n    context length      262144    \n    embedding length    2560      \n    quantization        Q4_K_M    \n\n  Capabilities\n    completion    \n    tools         \n    thinking      \n\n  Parameters\n    repeat_penalty    1                 \n    stop              \"<|im_start|>\"    \n    stop              \"<|im_end|>\"      \n    temperature       0.6               \n    top_k             20                \n    top_p             0.95              \n\n  License\n    Apache License               \n    Version 2.0, January 2004    \n    ...",
+  "weight_provenance_limit": "Installed tag metadata observed after batch, not immutable per-request weight attestation"
+}

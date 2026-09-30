@@ -1,0 +1,7 @@
+{
+  "model_client_processes": 0,
+  "blocked_marker_present": false,
+  "shared_lock_exclusive_probe": "acquired and released",
+  "phase": "before P08 six-case evaluation",
+  "model_attempts": 0
+}
