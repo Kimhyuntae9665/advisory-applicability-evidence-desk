@@ -1,0 +1,30 @@
+{
+  "source_commit": "24a19c11447044e00977eb44c982b8b6e1e7aab9",
+  "source_commit_role": "Exact committed UI used for current media; this evidence-only update leaves all three UI files unchanged",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "298e391548c7e89dd4a0147360eea6e28befe739b2b8c819deba9a4e4540a466",
+      "bytes": 4287,
+      "matches_capture_source_sha256": true,
+      "matches_committed_source_bytes": true
+    },
+    {
+      "path": "style.css",
+      "sha256": "cd83bb6ee91e88d353df5ed5485f3cf3a71fb67f2f9ae6af13086b46ad55dc97",
+      "bytes": 5569,
+      "matches_capture_source_sha256": true,
+      "matches_committed_source_bytes": true
+    },
+    {
+      "path": "app.mjs",
+      "sha256": "94adda3ca82baea96315206fe5ca2ff952408072a065bb95eee933c1faf6aa22",
+      "bytes": 10896,
+      "matches_capture_source_sha256": true,
+      "matches_committed_source_bytes": true
+    }
+  ],
+  "additional_model_calls": 0,
+  "media_regenerated": false,
+  "frozen_files_changed": false
+}
