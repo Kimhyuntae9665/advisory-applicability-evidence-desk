@@ -1,0 +1,7 @@
+# Independent CPU review
+
+A separate read-only reviewer checked source matching, the original bundle, E4/E5 boundaries, historical alias scope, current-CVE absence, projection conflict, receipt binding, archive provenance and client serialization. All nine original manifest byte counts and hashes matched. The review found two defects before evaluation: object-valued note arrays could crash sorting, and an archive could be promoted without preserving evaluator rejection/completion provenance.
+
+Both were repaired with regressions. String element guards reject malformed arrays; archived notes require evaluator acceptance, complete done output, exact raw-note identity, case and original request evidence binding. Rejected outputs render as separate historical data, without current-source citation links. The focused reviewer reran 38 Node tests and 79 additional CPU checks, finding no remaining blocker in the inspected changes. No model or GPU calls were made by review.
+
+Actual browser checks independently verify request serialization in both delayed-read/mutation orders, stale two-client 409 rejection with cleared confirmation, repeated immutable receipts, source removal with no restored details, E4 compatible upstream banner with running unknown, RH/CNA conflict preservation, keyboard source navigation and mobile text/viewport sizing. These are engineering checks of this original tiny prototype, not independent vulnerability adjudication, formal VEX schema validation or security certification.

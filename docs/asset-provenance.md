@@ -1,0 +1,9 @@
+# Diagram and capture provenance
+
+All seven glyphs in architecture.svg are original geometric role drawings, not vendor logos. Names below cards describe actual implemented components: Inventory, Sources, Lookup, Template, optional Qwen, Review and Receipt. The graph derives from core.mjs, notes.mjs, the optional isolated model client and the actual review API. No private vendor architecture is inferred. Qwen is an implemented optional path, with zero observed P08 calls in this CPU release.
+
+The approved reference is Library libfile_e1f58134c8f48191abda5ff1b647d768 version 1, synthetic-logo-rendering-compatibility-test.png. Its consumer-local pixels were inspected. P08 uses its dotted dark field, rounded white glyph cards, curved arrows and short names below glyphs. Reference pixels are not republished. SVG resources are embedded; all square role glyphs preserve aspect ratio. PNG and editable SVG are provided, with narrow 360/390px captures. No non-square third-party logo is used.
+
+Screenshots and evidence-review.mp4 come from the actual installed Chrome browser running this implementation, with CPU rendering and no model inference during capture. They are browser-automated demonstrations on fictional fixtures, not independent human security adjudication. Automated button clicks simulate inspection actions; resulting local receipts are demo records, not authenticated change approvals. The video intentionally shows deterministic source rules, template notes, missing evidence, historical receipts, conflicts and MODEL_NOT_RUN. It makes no model-accuracy claim.
+
+Canonical source quotes and unmodified records remain separately attributed and CC BY-SA 4.0. Original code/glyph MIT licensing does not relicense vendor data. Fictional inventory, gold and the research projection retain the supplied bundle's provenance.

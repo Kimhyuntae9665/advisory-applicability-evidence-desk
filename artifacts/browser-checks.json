@@ -1,0 +1,60 @@
+{
+  "browser": "actual installed Google Chrome via Playwright",
+  "fictional_inventory": true,
+  "browser_automation": true,
+  "human_security_adjudication": false,
+  "model_calls": 0,
+  "media_label": "CPU-only source rules and template; no model result in this recording",
+  "repeated_review": {
+    "same_receipt_hash": true,
+    "case_id": "D2"
+  },
+  "delayed_mutation_then_read": {
+    "order": [
+      "mutation_requested",
+      "mutation_forwarded",
+      "read_requested"
+    ],
+    "read_serialized_after_mutation": true,
+    "receipt_historical": true
+  },
+  "delayed_old_read_then_revocation": {
+    "order": [
+      "old_read_captured",
+      "old_read_released",
+      "revocation_requested"
+    ],
+    "no_restored_source_card_or_pointer": true,
+    "source_endpoint_status": 403
+  },
+  "two_client_stale_review": {
+    "http_status": 409,
+    "fresh_inspection_required": true,
+    "checkbox_cleared": true,
+    "no_automatic_review": true
+  },
+  "E4_erratum": {
+    "installed_vendor_statement": "fixed",
+    "compatible_upstream_banner": true,
+    "running_build_restart": "unknown"
+  },
+  "source_conflict": {
+    "html_and_cna_preserved": true,
+    "no_precedence_inferred": true
+  },
+  "mobile": {
+    "viewport": 390,
+    "document": 390,
+    "minimumTextPixels": 14
+  },
+  "diagram": [
+    {
+      "viewport": 360,
+      "resource_loaded": true
+    },
+    {
+      "viewport": 390,
+      "resource_loaded": true
+    }
+  ]
+}

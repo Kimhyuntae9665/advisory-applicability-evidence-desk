@@ -1,0 +1,81 @@
+{
+  "library_file_id": "libfile_dd9b8d2e65148191be9a47a2236ac221",
+  "version": 0,
+  "zip_bytes": 19914,
+  "zip_sha256": "3ac0e5c543dd3c3245bed5433d892d80169950785246372a2002decc2fdb97aa",
+  "consumer_readable_bytes": true,
+  "original_files": [
+    {
+      "path": "README.txt",
+      "bytes": 2299,
+      "sha256": "03b1ba0f14b550ebfaad70c6edc51ba3abb45a9bfd1d8e9e23c3e6a0284a0a96",
+      "verified": true
+    },
+    {
+      "path": "contract.json",
+      "bytes": 1782,
+      "sha256": "c013fd62f99c90b9c6c982c58e9955920d5ce7cdbef0ae399bf6ffe01f7b1970",
+      "verified": true
+    },
+    {
+      "path": "inventory-fictional.json",
+      "bytes": 3177,
+      "sha256": "697c9403c64d7aaa80c9170ccb9583e10814dee1fb2c2ecfdc9e4357ca8643df",
+      "verified": true
+    },
+    {
+      "path": "query-gold-v1.json",
+      "bytes": 9443,
+      "sha256": "8b0810e0f5caebcb3adb78806e64f0a74d9a8ac12e41918277383abcb34b3284",
+      "verified": true
+    },
+    {
+      "path": "redhat-source-conflict-projection.json",
+      "bytes": 2162,
+      "sha256": "26cb8d483846e9c2baedec50f655725284904fc5e634cee76edd2333e8a1507f",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/LICENSE-CC-BY-SA-4.0.txt",
+      "bytes": 20137,
+      "sha256": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/UPSTREAM-README.md",
+      "bytes": 989,
+      "sha256": "36a09fbf5f1e70dd86d2104627e181477e747625629a21342286e8f3b62f2f04",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/ubuntu-cve-2024-6387.openvex.json",
+      "bytes": 58444,
+      "sha256": "0f7c9d66fa4c509e1a34878bf75383bee3748b2d680ac2361da11b74fb63f0fb",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/ubuntu-usn-6859-1.openvex.json",
+      "bytes": 18803,
+      "sha256": "56a64465eee257e340e5e34a3af835b9a677bab3a99aa61dea1f0a2071b041e1",
+      "verified": true
+    }
+  ],
+  "upstream_git_blobs": [
+    {
+      "path": "vendor-data/ubuntu-cve-2024-6387.openvex.json",
+      "git_blob_sha": "88f1aafc4d227cbe82da6d29ce6d6f7088f70a5b",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/ubuntu-usn-6859-1.openvex.json",
+      "git_blob_sha": "edbd9cdcf2f39569495c1e10c37cebc626ea878d",
+      "verified": true
+    },
+    {
+      "path": "vendor-data/LICENSE-CC-BY-SA-4.0.txt",
+      "git_blob_sha": "7d4f96c54aa155a17387e64501c50b6a0469932c",
+      "verified": true
+    }
+  ],
+  "model_calls": 0
+}

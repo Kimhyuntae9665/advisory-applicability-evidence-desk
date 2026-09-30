@@ -1,0 +1,23 @@
+import {createHash} from 'node:crypto';
+export const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+export function templateNote(evidence){return {case_id:evidence.case_id,evidence_fingerprint:evidence.evidence_fingerprint,coverage_state:evidence.identity_or_coverage_state,vendor_statement:evidence.vendor_statement,running_state:evidence.running_state,explanations:evidence.facts.map(f=>({fact_id:f.id,pointer_ids:[...f.pointer_ids],lookup_ids:[...(f.lookup_ids??[])],text:f.text})),unknowns:[...evidence.unknowns],review_required:true};}
+const keys=(value,allowed)=>value&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(value).every(k=>allowed.includes(k));
+const stringArray=value=>Array.isArray(value)&&value.every(item=>typeof item==='string');
+export function unsupportedClaimFlags(text){if(typeof text!=='string')return [];const patterns=[/(?:host|machine|system)\s+(?:is\s+)?(?:safe|unaffected|secure)/ig,/(?:service|process)\s+(?:has\s+)?(?:restarted|is fixed)/ig,/(?:suppress|patch|close)\s+(?:the\s+)?(?:alert|ticket|host)/ig];const flags=[];for(const sentence of text.split(/[.!?\n;]/))for(const pattern of patterns){for(const match of sentence.matchAll(pattern)){const prefix=sentence.slice(Math.max(0,match.index-60),match.index);if(!/(?:not|never|no evidence|cannot|do not)\b/i.test(prefix))flags.push(match[0]);}}return flags;}
+export function validateNote(note,evidence){
+ const issues=[];const fields=['case_id','evidence_fingerprint','coverage_state','vendor_statement','running_state','explanations','unknowns','review_required'];
+ if(!keys(note,fields)||fields.some(f=>!Object.hasOwn(note??{},f)))return {valid:false,status:'INVALID_SCHEMA',issues:['Complete allowlisted note object required.'],semanticStatus:'NOT_REVIEWED'};
+ for(const [field,value]of [['case_id',evidence.case_id],['evidence_fingerprint',evidence.evidence_fingerprint],['coverage_state',evidence.identity_or_coverage_state],['vendor_statement',evidence.vendor_statement],['running_state',evidence.running_state],['review_required',true]])if(note[field]!==value)issues.push('Bound '+field+' does not match inspected evidence.');
+ if(!stringArray(note.unknowns)||JSON.stringify([...note.unknowns].sort())!==JSON.stringify([...evidence.unknowns].sort()))issues.push('All verified unknowns must remain exact and complete.');
+ if(!Array.isArray(note.explanations)||!note.explanations.length||note.explanations.length>16)issues.push('Bound explanatory facts required.');
+ else{const seen=new Set();for(const part of note.explanations){if(!keys(part,['fact_id','pointer_ids','lookup_ids','text'])||typeof part.text!=='string'||part.text.trim().length<5||part.text.length>1200||!stringArray(part.pointer_ids)||!stringArray(part.lookup_ids)){issues.push('Invalid explanatory fact schema.');continue;}const fact=evidence.facts.find(f=>f.id===part.fact_id);if(!fact||seen.has(part.fact_id)){issues.push('Unknown or duplicate fact ID.');continue;}seen.add(part.fact_id);if(JSON.stringify([...part.pointer_ids].sort())!==JSON.stringify([...fact.pointer_ids].sort())||JSON.stringify([...part.lookup_ids].sort())!==JSON.stringify([...(fact.lookup_ids??[])].sort()))issues.push('Citation or computed lookup set does not match the exact fact.');if(unsupportedClaimFlags(part.text).length)issues.push('Unsupported all-clear, running-state or action claim.');}
+ for(const fact of evidence.facts)if(!seen.has(fact.id))issues.push('Missing verified fact '+fact.id+'.');}
+ return {valid:!issues.length,status:issues.length?'REJECTED':'CITATIONS_BOUND',issues,semanticStatus:'HUMAN_REVIEW_REQUIRED',noteFingerprint:hash(note)};
+}
+export function recordedNote(entry,evidence){
+ if(!entry)return {status:'MODEL_NOT_RUN',note:null,validation:null};
+ const validation=validateNote(entry.note,evidence);
+ let original=null,request=null;try{original=JSON.parse(entry.attempt?.raw?.message?.content);request=JSON.parse(entry.attempt.request.messages.find(m=>m.role==='user').content);}catch{}
+ const complete=validation.valid&&entry.status==='complete'&&entry.parse_state==='valid-json'&&entry.request_match===true&&entry.validation?.valid===true&&entry.attempt?.status==='complete'&&entry.attempt?.raw?.done===true&&entry.attempt.raw.done_reason!=='length'&&entry.case_id===evidence.case_id&&entry.attempt.case_id===evidence.case_id&&hash(original)===hash(entry.note)&&request?.case_id===evidence.case_id&&request?.verified_evidence?.evidence_fingerprint===evidence.evidence_fingerprint;
+ return {status:!complete?'ARCHIVE_REJECTED':!validation.valid?'ARCHIVE_REJECTED':'PROPOSED_EXPLANATION',note:entry.note??null,validation:{...validation,valid:complete&&validation.valid},raw:entry};
+}

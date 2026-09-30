@@ -1,0 +1,1 @@
+{"name":"advisory-applicability-evidence-desk","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.mjs","test":"node --test","baseline":"node evaluate.mjs --baseline","prepare":"node evaluate.mjs --prepare"},"engines":{"node":">=18"}}
