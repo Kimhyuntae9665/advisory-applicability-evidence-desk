@@ -39,7 +39,7 @@ def main():
     if not args.lease_authorized:
         raise RuntimeError('explicit_gpu_handover_required')
     source_bytes=(ROOT/'artifacts/model-input.json').read_bytes()
-    snapshot_bytes=(ROOT/'artifacts/source-snapshot.json').read_bytes()
+    snapshot_bytes=(ROOT/'artifacts/source-snapshot-v2.json').read_bytes()
     source,snapshot=json.loads(source_bytes),json.loads(snapshot_bytes)
     if hashlib.sha256(source_bytes).hexdigest()!=snapshot['modelInputDigest'] or source!=snapshot['modelInput']:
         raise RuntimeError('frozen_model_input_mismatch')
