@@ -1,0 +1,93 @@
+[
+  {
+    "case_id": "D1",
+    "split": "development",
+    "inventory_id": "D1-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "D2",
+    "split": "development",
+    "inventory_id": "D2-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE",
+      "U-USN"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "D3",
+    "split": "development",
+    "inventory_id": "D3-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E1",
+    "split": "evaluation",
+    "inventory_id": "E1-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E2",
+    "split": "evaluation",
+    "inventory_id": "E2-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E3",
+    "split": "evaluation",
+    "inventory_id": "E3-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E4",
+    "split": "evaluation",
+    "inventory_id": "E4-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E5",
+    "split": "evaluation",
+    "inventory_id": "E5-INV",
+    "advisory_id": "CVE-2024-6387",
+    "admitted_sources": [
+      "U-CVE"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  },
+  {
+    "case_id": "E6",
+    "split": "evaluation",
+    "inventory_id": "E6-INV",
+    "advisory_id": "CVE-2026-44192",
+    "admitted_sources": [
+      "RH-PROJECTION"
+    ],
+    "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe."
+  }
+]

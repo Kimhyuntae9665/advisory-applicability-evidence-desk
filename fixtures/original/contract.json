@@ -1,0 +1,36 @@
+{
+  "version": "v1",
+  "purpose": "Read-only component advisory evidence review",
+  "admitted_lookup": "Exact complete PURL only in this slice; no generalized version comparator, source-build equivalence or cross-vendor transfer",
+  "two_times": "Inventory observation time and source-document/record time are separate; retrieval time alone does not settle precedence",
+  "source_boundary": "U-CVE and U-USN are unmodified vendor OpenVEX data; RH-PROJECTION is a factual research projection, not original VEX",
+  "output_fields": [
+    "case_id",
+    "inventory_id",
+    "source_ids",
+    "source_snapshot_hashes",
+    "identity_or_coverage_state",
+    "vendor_statement",
+    "source_pointers",
+    "running_state",
+    "unknowns",
+    "review_required"
+  ],
+  "required_running_state": "unknown or supported exact observed build; never infer restart from installation",
+  "safety_boundary": [
+    "No scans, commands, package operations, suppression or remediation",
+    "No real user/host/credential data",
+    "LLM gets no external write capability",
+    "Reviewer receipt is not change approval"
+  ],
+  "metrics": [
+    "exact identity/coverage state",
+    "correct source/container/alias",
+    "unsupported all-clear count",
+    "unknown/conflict preservation",
+    "citation/pointer validity separately from semantic support",
+    "latency and resource receipt separate from decision quality"
+  ],
+  "baseline": "CPU exact-ID lookup plus explicit reviewed source rules and templated note; model explains only admitted facts",
+  "data_license": "Canonical vendor-data is CC BY-SA 4.0; preserve attribution, source URLs, notices and applicable ShareAlike conditions. Other bundle records are authored fictional scenarios/factual projections; do not imply vendor authorship."
+}

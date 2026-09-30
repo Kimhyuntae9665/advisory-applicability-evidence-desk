@@ -1,0 +1,50 @@
+{
+  "kind": "research_authored_factual_projection",
+  "captured_on": "2026-09-30",
+  "cve": "CVE-2026-44192",
+  "not_full_original_payload": true,
+  "not_authoritative_vex": true,
+  "representations": [
+    {
+      "source_id": "RH-HTML",
+      "url": "https://access.redhat.com/security/cve/cve-2026-44192",
+      "publisher": "Red Hat",
+      "source_last_modified": "not exposed in inspected text",
+      "source_quote": "The vulnerable code does not exist in any AAP-shipped artifact.",
+      "scope_summary": "Statement distinguishes the VS Code extension distribution from AAP RPM/container artifacts"
+    },
+    {
+      "source_id": "RH-CNA",
+      "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/44xxx/CVE-2026-44192.json",
+      "publisher": "Red Hat CNA via official CVE List",
+      "git_blob_sha": "f12522aca7e45d60f2f3c756620d4e7e57d1a677",
+      "container": "containers.cna",
+      "provider_date_updated": "2026-07-22T12:06:48.859Z",
+      "record_date_updated": "2026-07-22T13:05:03.058Z",
+      "affected_entries": [
+        {
+          "json_pointer": "/containers/cna/affected/0",
+          "product": "Red Hat Ansible Automation Platform 2",
+          "cpe": "cpe:/a:redhat:ansible_automation_platform:2",
+          "packageName": "ansible-automation-platform-25/ansible-dev-tools-rhel8",
+          "defaultStatus": "affected"
+        },
+        {
+          "json_pointer": "/containers/cna/affected/1",
+          "product": "Red Hat Ansible Automation Platform 2",
+          "cpe": "cpe:/a:redhat:ansible_automation_platform:2",
+          "packageName": "ansible-automation-platform-26/ansible-dev-tools-rhel9",
+          "defaultStatus": "affected"
+        },
+        {
+          "json_pointer": "/containers/cna/affected/2",
+          "product": "Red Hat Ansible Automation Platform 2",
+          "cpe": "cpe:/a:redhat:ansible_automation_platform:2",
+          "packageName": "ansible-dev-tools",
+          "defaultStatus": "affected"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Conflicting admitted representations; no chronology-based precedence established; dated vendor/VEX reconciliation remains missing"
+}

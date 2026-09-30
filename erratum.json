@@ -1,0 +1,12 @@
+{
+  "id": "ADVISORY-v1-E4-banner-wording-1",
+  "phase": "pre-evaluation; issued before any P08 inference",
+  "originalBundleUnchanged": true,
+  "case_id": "E4",
+  "stateUnchanged": "EXACT_INSTALLED_MATCH_RUNNING_UNRESOLVED",
+  "sourcePointersUnchanged": true,
+  "interpretation": "Installed pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy and banner OpenSSH_8.9p1 have compatible upstream versions. The banner lacks the Debian build revision. It does not establish a different or older running build. Accept the exact installed-package vendor-fixed statement while running build, running fix and restart remain unverified.",
+  "evaluatorOverride": "Do not require the original word Different; reject inferred running-build mismatch or restart.",
+  "appliesTo": ["deterministic template", "model explanation", "human review display", "evaluation"],
+  "E5Scope": "reported_release and PURL distro assert the same component environment in this fixture. Do not substitute a host/container distinction; unknown field scope means ambiguity."
+}

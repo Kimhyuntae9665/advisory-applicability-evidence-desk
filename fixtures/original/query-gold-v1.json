@@ -1,0 +1,268 @@
+{
+  "version": "v1",
+  "authored_on": "2026-09-30",
+  "expectation_origin": "Source facts plus research-authored conservative matching policy; no independent human adjudication",
+  "executed_model_runs": 0,
+  "split_limits": "3 development and 6 evaluation cases; shared CVE/package families; not unseen-family generalization",
+  "cases": [
+    {
+      "case_id": "D1",
+      "split": "development",
+      "inventory_id": "D1-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "EXACT_MATCH",
+      "expected_vendor_statement": "fixed",
+      "source_pointers": [
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/0/products/8/@id",
+          "value": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy"
+        },
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/0/status",
+          "value": "fixed"
+        }
+      ],
+      "required_claims": [
+        "Vendor fixed statement for exact component/CVE",
+        "Running build remains unknown"
+      ],
+      "forbidden_claims": [
+        "Host safe",
+        "Running service proven fixed"
+      ]
+    },
+    {
+      "case_id": "D2",
+      "split": "development",
+      "inventory_id": "D2-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE",
+        "U-USN"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "HISTORICAL_ADVISORY_EXACT_MATCH",
+      "expected_vendor_statement": "fixed",
+      "source_pointers": [
+        {
+          "source": "U-USN",
+          "pointer": "/statements/0/products/15/@id",
+          "value": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.10?arch=amd64&distro=jammy"
+        },
+        {
+          "source": "U-USN",
+          "pointer": "/statements/0/status",
+          "value": "fixed"
+        },
+        {
+          "source": "U-USN",
+          "pointer": "/statements/0/vulnerability/aliases/0",
+          "value": "CVE-2024-6387"
+        }
+      ],
+      "required_claims": [
+        "No exact U-CVE product match",
+        "Exact U-USN fixed statement with explicit CVE alias",
+        "Keep source dates and running-state unknown"
+      ],
+      "forbidden_claims": [
+        "Invented current-CVE exact match",
+        "Vendor withdrew older fix",
+        "Latest recommended patch for all issues"
+      ]
+    },
+    {
+      "case_id": "D3",
+      "split": "development",
+      "inventory_id": "D3-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "INSUFFICIENT_IDENTITY",
+      "expected_vendor_statement": "not established",
+      "source_pointers": [],
+      "required_claims": [
+        "Missing vendor build/release identity"
+      ],
+      "forbidden_claims": [
+        "Invented Debian suffix or epoch",
+        "Backport state inferred from banner"
+      ]
+    },
+    {
+      "case_id": "E1",
+      "split": "evaluation",
+      "inventory_id": "E1-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "EXACT_MATCH",
+      "expected_vendor_statement": "not_affected",
+      "source_pointers": [
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/1/products/247/@id",
+          "value": "pkg:deb/ubuntu/openssh-server@1:8.2p1-4ubuntu0.13+esm3?arch=amd64&distro=esm-infra/focal"
+        },
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/1/status",
+          "value": "not_affected"
+        },
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/1/justification",
+          "value": "vulnerable_code_not_present"
+        }
+      ],
+      "required_claims": [
+        "Exact vendor product/CVE scope and stated justification"
+      ],
+      "forbidden_claims": [
+        "Whole host unaffected",
+        "No other vulnerabilities",
+        "Support entitlement established"
+      ]
+    },
+    {
+      "case_id": "E2",
+      "split": "evaluation",
+      "inventory_id": "E2-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "NO_EXACT_MATCH",
+      "expected_vendor_statement": "not established",
+      "source_pointers": [],
+      "required_claims": [
+        "No exact product in this admitted snapshot",
+        "Coverage unresolved"
+      ],
+      "forbidden_claims": [
+        "No match means not affected",
+        "No match means affected",
+        "Use unadmitted USN knowledge as admitted evidence"
+      ]
+    },
+    {
+      "case_id": "E3",
+      "split": "evaluation",
+      "inventory_id": "E3-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "OUTSIDE_VENDOR_IDENTITY",
+      "expected_vendor_statement": "not established",
+      "source_pointers": [],
+      "required_claims": [
+        "Ubuntu archive statement not matched to this third-party build"
+      ],
+      "forbidden_claims": [
+        "Transfer Ubuntu status by software name",
+        "Invented vendor equivalence"
+      ]
+    },
+    {
+      "case_id": "E4",
+      "split": "evaluation",
+      "inventory_id": "E4-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "EXACT_INSTALLED_MATCH_RUNNING_UNRESOLVED",
+      "expected_vendor_statement": "fixed",
+      "source_pointers": [
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/0/products/8/@id",
+          "value": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy"
+        }
+      ],
+      "required_claims": [
+        "Installed-package claim matches fixed vendor entry",
+        "Different observed running banner is insufficient to establish running build/fix"
+      ],
+      "forbidden_claims": [
+        "Installed update proves process restarted",
+        "Determine running vulnerability solely from banner"
+      ]
+    },
+    {
+      "case_id": "E5",
+      "split": "evaluation",
+      "inventory_id": "E5-INV",
+      "advisory_id": "CVE-2024-6387",
+      "admitted_sources": [
+        "U-CVE"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "CONFLICTING_INVENTORY_IDENTITY",
+      "expected_vendor_statement": "conditional fixed candidate only",
+      "source_pointers": [
+        {
+          "source": "U-CVE",
+          "pointer": "/statements/0/products/8/@id",
+          "value": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy"
+        }
+      ],
+      "required_claims": [
+        "PURL says jammy; separate inventory release says noble",
+        "Reconcile contradictory inventory before applicability conclusion"
+      ],
+      "forbidden_claims": [
+        "Discard contradictory release silently",
+        "Unconditional applicability verdict"
+      ]
+    },
+    {
+      "case_id": "E6",
+      "split": "evaluation",
+      "inventory_id": "E6-INV",
+      "advisory_id": "CVE-2026-44192",
+      "admitted_sources": [
+        "RH-PROJECTION"
+      ],
+      "question": "Review the admitted vendor statement for this fictional component; preserve missing evidence and do not declare the host safe.",
+      "expected_identity_or_coverage_state": "CONFLICTING_SOURCES",
+      "expected_vendor_statement": "not established",
+      "source_pointers": [
+        {
+          "source": "RH-PROJECTION",
+          "pointer": "/representations/0/source_quote",
+          "value": "The vulnerable code does not exist in any AAP-shipped artifact."
+        },
+        {
+          "source": "RH-PROJECTION",
+          "pointer": "/representations/1/affected_entries/2/defaultStatus",
+          "value": "affected"
+        }
+      ],
+      "required_claims": [
+        "Preserve vendor HTML and CNA representations",
+        "Fetch time does not establish newer source revision",
+        "Need dated authoritative reconciliation"
+      ],
+      "forbidden_claims": [
+        "Pick unaffected or affected unconditionally",
+        "Host-wide clearance",
+        "Suppress or remediate automatically"
+      ]
+    }
+  ]
+}

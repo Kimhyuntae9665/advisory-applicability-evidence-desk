@@ -1,0 +1,95 @@
+{
+  "status": "original fictional fixtures; no real host data",
+  "records": [
+    {
+      "inventory_id": "D1-INV",
+      "asset_id": "SYNTH-D1",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy",
+      "origin": "Ubuntu archive",
+      "running_build": "not_observed"
+    },
+    {
+      "inventory_id": "D2-INV",
+      "asset_id": "SYNTH-D2",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.10?arch=amd64&distro=jammy",
+      "origin": "Ubuntu archive",
+      "running_build": "not_observed"
+    },
+    {
+      "inventory_id": "D3-INV",
+      "asset_id": "SYNTH-D3",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": null,
+      "origin": "not established",
+      "running_build": "not_observed",
+      "reported_name": "OpenSSH",
+      "reported_version": "8.9p1"
+    },
+    {
+      "inventory_id": "E1-INV",
+      "asset_id": "SYNTH-E1",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.2p1-4ubuntu0.13+esm3?arch=amd64&distro=esm-infra/focal",
+      "origin": "Ubuntu archive",
+      "running_build": "not_observed"
+    },
+    {
+      "inventory_id": "E2-INV",
+      "asset_id": "SYNTH-E2",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.10?arch=amd64&distro=jammy",
+      "origin": "Ubuntu archive",
+      "running_build": "not_observed"
+    },
+    {
+      "inventory_id": "E3-INV",
+      "asset_id": "SYNTH-E3",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:generic/fictional-lab/openssh@8.9p1",
+      "origin": "fictional third-party build",
+      "running_build": "not_observed"
+    },
+    {
+      "inventory_id": "E4-INV",
+      "asset_id": "SYNTH-E4",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy",
+      "origin": "Ubuntu archive",
+      "running_build": "not established",
+      "running_banner": "OpenSSH_8.9p1",
+      "restart_confirmation": "not provided"
+    },
+    {
+      "inventory_id": "E5-INV",
+      "asset_id": "SYNTH-E5",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": "pkg:deb/ubuntu/openssh-server@1:8.9p1-3ubuntu0.17?arch=amd64&distro=jammy",
+      "origin": "Ubuntu archive",
+      "running_build": "not_observed",
+      "reported_release": "noble",
+      "purl_release": "jammy"
+    },
+    {
+      "inventory_id": "E6-INV",
+      "asset_id": "SYNTH-E6",
+      "fictional": true,
+      "observed_at": "2026-09-30T00:00:00Z",
+      "product_purl": null,
+      "origin": "Red Hat AAP artifact asserted in fictional inventory",
+      "running_build": "not_observed",
+      "cpe": "cpe:/a:redhat:ansible_automation_platform:2",
+      "component": "ansible-dev-tools",
+      "version": "not supplied"
+    }
+  ]
+}
