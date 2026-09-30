@@ -1,0 +1,74 @@
+{
+  "browser": "Google Chrome via Playwright",
+  "gpuDisabled": true,
+  "expectation": "failure",
+  "modelCalls": 0,
+  "normalSelections": [
+    {
+      "selected": "D2",
+      "before": {
+        "tag": "BUTTON",
+        "id": null,
+        "inventoryCase": "D2"
+      },
+      "after": {
+        "tag": "BODY",
+        "id": null,
+        "inventoryCase": null
+      }
+    },
+    {
+      "selected": "D3",
+      "before": {
+        "tag": "BUTTON",
+        "id": null,
+        "inventoryCase": "D3"
+      },
+      "after": {
+        "tag": "BODY",
+        "id": null,
+        "inventoryCase": null
+      }
+    },
+    {
+      "selected": "E1",
+      "before": {
+        "tag": "BUTTON",
+        "id": null,
+        "inventoryCase": "E1"
+      },
+      "after": {
+        "tag": "BODY",
+        "id": null,
+        "inventoryCase": null
+      }
+    }
+  ],
+  "delayedResponseLaterFocus": {
+    "chosenWhilePending": {
+      "tag": "INPUT",
+      "id": "review-check",
+      "inventoryCase": null
+    },
+    "afterResponse": {
+      "tag": "INPUT",
+      "id": "review-check",
+      "inventoryCase": null
+    }
+  },
+  "controlledFailure": {
+    "status": 409,
+    "before": {
+      "tag": "BUTTON",
+      "id": null,
+      "inventoryCase": "E3"
+    },
+    "after": {
+      "tag": "BODY",
+      "id": null,
+      "inventoryCase": null
+    },
+    "selectedCaseUnchanged": true
+  },
+  "pageErrors": []
+}
