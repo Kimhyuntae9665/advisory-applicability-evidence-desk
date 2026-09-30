@@ -1,0 +1,137 @@
+{
+  "browser": "actual installed Google Chrome via Playwright",
+  "gpu_disabled": true,
+  "additional_model_calls": 0,
+  "human_security_adjudication": false,
+  "screenshots": [
+    {
+      "file": "01-inventory.png",
+      "caption": "인벤토리 선택 · 현재 사례 D1",
+      "sha256": "07c2f80aa0c29f954a91f1120cdc061992507f760abcdacf53a2838d88abc0d1",
+      "bytes": 125642
+    },
+    {
+      "file": "02-exact-cve-quote.png",
+      "caption": "현재 CVE · 정확한 원문 인용과 결과",
+      "sha256": "53844deb21556ddc0ad5fab5965f80880f3647f3628fb6e9639971b67d765290",
+      "bytes": 176586
+    },
+    {
+      "file": "03-historical-usn.png",
+      "caption": "과거 USN 수정 진술 · 현재 CVE 미일치",
+      "sha256": "f51a6f32a0d7af65f397699d85bc790e35f543491ffd58a013b97bf18e83f6cb",
+      "bytes": 496887
+    },
+    {
+      "file": "04-no-exact-match.png",
+      "caption": "정확한 일치 없음 · 영향 없음으로 추론하지 않음",
+      "sha256": "516c7760469518615da15acaa78332997402c50f966d76f32d4f3b8b6bde6e3c",
+      "bytes": 368781
+    },
+    {
+      "file": "05-missing-identity.png",
+      "caption": "식별 근거 부족 · 결론 보류",
+      "sha256": "b08e8995a9c3f5755bbd17108c30ad07b1cce2c3928614b0a856a7f14cea21c0",
+      "bytes": 354229
+    },
+    {
+      "file": "06-inventory-conflict.png",
+      "caption": "인벤토리 환경 충돌 · 범위 확인 필요",
+      "sha256": "fbf947e975ee4a643513bb3ae8ab2be1d1a8b4c8c89e28fd97d9b7b4c2970284",
+      "bytes": 416491
+    },
+    {
+      "file": "07-source-conflict.png",
+      "caption": "출처 진술 충돌 · 우선순위 추론 없음",
+      "sha256": "f8fed21338ec850c66f76c6363647e5677cacc2180bb1a6a3ac9257f5c0d96b3",
+      "bytes": 428100
+    },
+    {
+      "file": "08-installed-running-unknown.png",
+      "caption": "설치 fixed · 실행 빌드와 재시작 미확인",
+      "sha256": "27ca2985a4e7a58d7cb4ce30bb4df1e058043ef9a28e47d7da8bd9ebe6958390",
+      "bytes": 422545
+    },
+    {
+      "file": "09-review-history-receipt.png",
+      "caption": "명시적 근거 확인 · 기록과 영수증",
+      "sha256": "e788951779d40cb3bd3d768f9b04f6029c0ebb4a030f84eb45802e3328585c75",
+      "bytes": 79797
+    },
+    {
+      "file": "10-mobile-390.png",
+      "caption": "390px 모바일 · 같은 근거와 미확인 상태",
+      "sha256": "b3f6559920cdbf5f7521d2ca887a7ee3f207d8ad35292516823d045a0fedea5c",
+      "bytes": 422851
+    }
+  ],
+  "repeated_receipt": {
+    "same_hash": true,
+    "download_http_status": 200
+  },
+  "two_client_stale": {
+    "http_status": 409,
+    "confirmation_cleared": true,
+    "review_disabled": true
+  },
+  "archive_gate": {
+    "automatic_semantic_acceptance": false,
+    "changed_source_rejected": true,
+    "rejected_current_citation_links": 0
+  },
+  "stale_read_revocation": {
+    "order": [
+      "old_read_captured",
+      "old_read_released",
+      "revocation_requested"
+    ],
+    "unadmitted_source_http_status": 403,
+    "source_card_removed": true
+  },
+  "mobile": {
+    "viewport": 390,
+    "document": 390,
+    "titleFont": 28,
+    "titleWidth": 358,
+    "titleScrollWidth": 358,
+    "minimumTextPixels": 14
+  },
+  "page_errors": [],
+  "equal_white_source_result_panels": [
+    {
+      "x": 184,
+      "width": 526,
+      "bg": "rgb(255, 255, 255)"
+    },
+    {
+      "x": 730,
+      "width": 526,
+      "bg": "rgb(255, 255, 255)"
+    }
+  ],
+  "frozen_files_unchanged": {
+    "core.mjs": true,
+    "notes.mjs": true,
+    "cases.json": true,
+    "erratum.json": true,
+    "evaluate.mjs": true,
+    "model_client.py": true,
+    "fixtures/original/query-gold-v1.json": true,
+    "fixtures/original/inventory-fictional.json": true,
+    "fixtures/original/source-manifest.json": true,
+    "fixtures/original/vendor-data/ubuntu-cve-2024-6387.openvex.json": true,
+    "fixtures/original/vendor-data/ubuntu-usn-6859-1.openvex.json": true,
+    "fixtures/original/redhat-source-conflict-projection.json": true
+  },
+  "source_file_sha256": {
+    "index.html": "298e391548c7e89dd4a0147360eea6e28befe739b2b8c819deba9a4e4540a466",
+    "style.css": "cd83bb6ee91e88d353df5ed5485f3cf3a71fb67f2f9ae6af13086b46ad55dc97",
+    "app.mjs": "94adda3ca82baea96315206fe5ca2ff952408072a065bb95eee933c1faf6aa22",
+    "server.mjs": "b91db4dc04fd2f8b24c51d21dd59f758d8ecd531722bb0a6c3a256f405d8132c",
+    "capture-refit.py": "d280aee7424325b00de7abad7ece215243dca269a8a5f30ec9abe23811112e3f",
+    "artifacts/model-input.json": "fcdd206fd6329d1015879df1751bb8979a818936a54286a45c09cbf7a8239085",
+    "artifacts/model-evaluation.json": "559672ca01e4c28da151e98531d12a86a37a1b13e7294109bfc3adaf70367206"
+  },
+  "capture_source_base_commit": "426fc66b36a893bb461329deefeb8d59483c71e2",
+  "capture_source_binding": "source_file_sha256 identifies the edited UI used for these actual captures; base commit alone is not the refit publication commit"
+}
