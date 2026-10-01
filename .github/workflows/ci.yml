@@ -10,3 +10,13 @@ jobs:
           node-version: 20
       - run: npm test
       - run: python3 -m unittest discover -s test -p 'test_model_client.py' -v
+
+  windows-startup:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Start CPU core with clone line endings
+        run: node scripts/check-startup.mjs

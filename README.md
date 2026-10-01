@@ -132,3 +132,7 @@ This is a local prototype, not a live inventory collector, complete vulnerabilit
 ## Data licenses
 
 Original application code and glyphs are MIT. **Canonical vendor data remains CC BY-SA 4.0**, with Canonical attribution, original source URLs, the upstream notice and [full license](fixtures/original/vendor-data/LICENSE-CC-BY-SA-4.0.txt) preserved. The code license does not relicense those records. Original bundle provenance distinguishes fictional inventory/gold and the research-authored conflict projection from vendor-authored data; redistribution or adaptation must retain the applicable data terms.
+
+## Windows CPU startup
+
+`.gitattributes` keeps hashed source files in LF form even when Git uses `core.autocrlf=true`; do not rewrite fixture bytes or regenerate source manifests to bypass an integrity failure. From a fresh clone, run `node scripts/check-startup.mjs` for a model-free startup/integrity check. The same check runs on Windows CI.
